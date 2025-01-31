@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Consultar CEP</h1>
+
+    <div class="form-container">
+        <input type="text" id="cep" placeholder="Digite o CEP" maxlength="9" oninput="aplicarMascara()">
+        <button onclick="buscarCEP()">Consultar</button>
+    </div>
+
+    <div class="result-container" id="result">
+        <p><strong>CEP:</strong> <span id="cep-result"></span></p>
+        <p><strong>Logradouro:</strong> <span id="logradouro-result"></span></p>
+        <p><strong>Complemento:</strong> <span id="complemento-result"></span></p>
+        <p><strong>Unidade:</strong> <span id="unidade-result"></span></p>
+        <p><strong>Bairro:</strong> <span id="bairro-result"></span></p>
+        <p><strong>Cidade:</strong> <span id="cidade-result"></span></p>
+        <p><strong>Estado:</strong> <span id="estado-result"></span></p>
+        <p><strong>Região:</strong> <span id="regiao-result"></span></p>
+        <p><strong>IBGE:</strong> <span id="ibge-result"></span></p>
+        <p><strong>GIA:</strong> <span id="gia-result"></span></p>
+        <p><strong>DDD:</strong> <span id="ddd-result"></span></p>
+        <p><strong>SIAFI:</strong> <span id="siafi-result"></span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
